@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_placar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.com.fiap.placar.PlacarActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/elemento_placar_titulo"
+            android:text="TIME A"
+            android:id="@+id/tvTimeA" />
+
+        <TextView
+            style="@style/elemento_placar_titulo"
+            android:text="TIME B"
+            android:id="@+id/tvTimeB" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvPlacarA"
+            style="@style/elemento_placar_valor"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/tvPlacarB"
+            style="@style/elemento_placar_valor"
+            android:text="0" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            style="@style/elemento_botao_placar"
+            android:text="GOL!"
+            android:onClick="fazGolA"
+            android:id="@+id/btGolA" />
+
+        <Button
+            style="@style/elemento_botao_placar"
+            android:text="GOL!"
+            android:onClick="fazGolB"
+            android:id="@+id/btGolB" />
+
+    </LinearLayout>
+
+</LinearLayout>
